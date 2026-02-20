@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio | Southbay Structure</title>
+    <meta name="description" content="Browse our portfolio of structural engineering projects including residential, commercial, institutional, and infrastructure projects across California.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Modern Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Southbay Structure Logo" class="logo">
+            </a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modern Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Project <span class="text-gradient">Portfolio</span></h1>
+            <p class="mb-5">A selection of recent structural engineering projects delivered for residential and commercial clients across California. Each project demonstrates our commitment to innovative, reliable, and client-focused solutions.</p>
+        </div>
+    </section>
+
+    <!-- Modern Portfolio Filter -->
+    <section class="angled-section">
+        <div class="container">
+            <div class="text-center mb-6">
+                <h2>Filter by <span class="text-gradient">Category</span></h2>
+                <p style="color: var(--color-text-secondary); max-width: 800px; margin: 0 auto var(--space-xl);">Browse our diverse portfolio of structural engineering projects across California.</p>
+                
+                <div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: center; margin-bottom: var(--space-2xl);">
+                    <button class="btn btn-secondary filter-btn active" data-filter="all">All Projects</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="residential">Residential</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="commercial">Commercial</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="institutional">Institutional</button>
+                    <button class="btn btn-secondary filter-btn" data-filter="infrastructure">Infrastructure</button>
+                </div>
+            </div>
+            
+            <!-- Modern Portfolio Grid -->
+            <div class="grid-modern" id="portfolio-grid">
+                <!-- Project 1 - Residential (Large) -->
+                <div class="portfolio-item card project-card card-large" data-category="residential">
+                    <div class="project-image">
+                        <div class="project-image-content">🏠</div>
+                    </div>
+                    <div class="project-category">Residential</div>
+                    <h3>Modern Residential Complex</h3>
+                    <p>Complete structural design for a 50-unit luxury residential complex in Silicon Valley featuring sustainable design elements and advanced seismic systems.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Multi-family</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Seismic Design</span>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - Commercial (Tall) -->
+                <div class="portfolio-item card project-card card-tall" data-category="commercial">
+                    <div class="project-image">
+                        <div class="project-image-content">🏢</div>
+                    </div>
+                    <div class="project-category">Commercial</div>
+                    <h3>Commercial Office Tower</h3>
+                    <p>Structural design for a 25-story office tower in San Francisco's Financial District, featuring innovative seismic damping systems and efficient floor plans.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">High-rise</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Seismic Damping</span>
+                    </div>
+                    <p class="mt-4">The project included complex foundation design due to San Francisco's challenging soil conditions and seismic requirements.</p>
+                </div>
+                
+                <!-- Project 3 - Institutional -->
+                <div class="portfolio-item card project-card" data-category="institutional">
+                    <div class="project-image">
+                        <div class="project-image-content">🏫</div>
+                    </div>
+                    <div class="project-category">Institutional</div>
+                    <h3>Educational Facility Retrofit</h3>
+                    <p>Seismic retrofit of a historic 1920s school building in Los Angeles, preserving architectural integrity while enhancing safety to meet modern codes.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Historic</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Seismic Retrofit</span>
+                    </div>
+                </div>
+                
+                <!-- Project 4 - Residential (Wide) -->
+                <div class="portfolio-item card project-card card-wide" data-category="residential">
+                    <div class="project-image">
+                        <div class="project-image-content">🏡</div>
+                    </div>
+                    <div class="project-category">Residential</div>
+                    <h3>Custom Home Design</h3>
+                    <p>Structural engineering for a custom hillside home in Malibu with panoramic ocean views, requiring complex foundation design and slope stability analysis.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Custom</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Hillside</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Complex Foundation</span>
+                    </div>
+                </div>
+                
+                <!-- Project 5 - Infrastructure -->
+                <div class="portfolio-item card project-card" data-category="infrastructure">
+                    <div class="project-image">
+                        <div class="project-image-content">🌉</div>
+                    </div>
+                    <div class="project-category">Infrastructure</div>
+                    <h3>Bridge Structure</h3>
+                    <p>Design and analysis of a pedestrian bridge connecting university campuses, featuring a unique architectural design and innovative structural system.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Bridge</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Pedestrian</span>
+                    </div>
+                </div>
+                
+                <!-- Project 6 - Commercial -->
+                <div class="portfolio-item card project-card" data-category="commercial">
+                    <div class="project-image">
+                        <div class="project-image-content">🏬</div>
+                    </div>
+                    <div class="project-category">Commercial</div>
+                    <h3>Mixed-Use Development</h3>
+                    <p>Structural engineering for a mixed-use development featuring retail, office, and residential spaces with underground parking and green roof systems.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Mixed-Use</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Green Building</span>
+                    </div>
+                </div>
+                
+                <!-- Project 7 - Institutional (Tall) -->
+                <div class="portfolio-item card project-card card-tall" data-category="institutional">
+                    <div class="project-image">
+                        <div class="project-image-content">⛪</div>
+                    </div>
+                    <div class="project-category">Institutional</div>
+                    <h3>Community Center</h3>
+                    <p>Structural design for a new community center serving as an emergency shelter, featuring flexible spaces and resilient design for disaster response.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Community</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Resilient Design</span>
+                    </div>
+                    <p class="mt-4">The facility was designed to serve multiple purposes, including community events, education, and emergency response during natural disasters.</p>
+                </div>
+                
+                <!-- Project 8 - Infrastructure (Large) -->
+                <div class="portfolio-item card project-card card-large" data-category="infrastructure">
+                    <div class="project-image">
+                        <div class="project-image-content">🚗</div>
+                    </div>
+                    <div class="project-category">Infrastructure</div>
+                    <h3>Parking Structure</h3>
+                    <p>Design of a 500-space parking structure with post-tensioned concrete slabs and integrated electric vehicle charging infrastructure in downtown San Jose.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Parking</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Post-tensioned</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">EV Ready</span>
+                    </div>
+                </div>
+                
+                <!-- Project 9 - Residential -->
+                <div class="portfolio-item card project-card" data-category="residential">
+                    <div class="project-image">
+                        <div class="project-image-content">🏘️</div>
+                    </div>
+                    <div class="project-category">Residential</div>
+                    <h3>Townhome Development</h3>
+                    <p>Structural engineering for a 40-unit townhome development in San Diego, featuring shared amenities and sustainable building materials.</p>
+                    <div class="mt-4">
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; margin-right: var(--space-xs); color: var(--color-accent);">Townhomes</span>
+                        <span style="display: inline-block; padding: var(--space-xs) var(--space-sm); background-color: rgba(212, 175, 55, 0.1); border-radius: var(--radius-sm); font-size: 0.875rem; color: var(--color-accent);">Sustainable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Have a <span class="text-gradient">Project</span> in Mind?</h2>
+            <p>Contact us to discuss how we can apply our expertise to your next structural engineering project.</p>
+            <div class="hero-buttons" style="justify-content: center;">
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+                <a href="tel:408-508-5595" class="btn btn-secondary">Call: 408-508-5595</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="assets/logo.png" alt="Southbay Structure Logo" style="height: 60px; margin-bottom: var(--space-lg);">
+                    <p style="color: var(--color-text-secondary);">Professional structural engineering services for safe, reliable, and innovative building solutions across California.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li><strong>Email:</strong> info@sbstr.com</li>
+                        <li><strong>Phone:</strong> 408-508-5595</li>
+                        <li><strong>Hours:</strong> Mon-Fri, 8AM-5PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Locations</h4>
+                    <ul class="footer-links">
+                        <li><strong>North California:</strong><br>4005 Clipper Ct, Fremont, CA 94538</li>
+                        <li><strong>South California:</strong><br>19360 Rinaldi St, Ste 736, Porter Ranch, CA 91326</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Southbay Structure, Inc. All rights reserved. | Professional Structural Engineering Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modern JavaScript with Filtering -->
+    <script>
+        // Mobile menu toggle with animation
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            
+            // Animate hamburger to X
+            const spans = hamburger.querySelectorAll('span');
+            if (navMenu.style.display === 'flex') {
+                spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+                spans[1].style.opacity = '0';
+                spans[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+            } else {
+                spans[0].style.transform = 'none';
+                spans[1].style.opacity = '1';
+                spans[2].style.transform = 'none';
+            }
+        });
+
+        // Update navigation active state
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-item a');
+            
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (currentPage === linkPage || (currentPage === '' && linkPage === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Add subtle animations on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe cards for animation
+            document.querySelectorAll('.card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Portfolio filtering with modern animation
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button with animation
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.style.transform = 'scale(1)';
+                    });
+                    this.classList.add('active');
+                    this.style.transform = 'scale(1.05)';
+                    
+                    // Filter items with fade animation
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        item.style.opacity = '0.3';
+                        item.style.transform = 'scale(0.95)';
+                        item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        
+                        setTimeout(() => {
+                            if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                                item.style.display = 'block';
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'scale(1)';
+                                }, 50);
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }, 150);
+                    });
+                });
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
